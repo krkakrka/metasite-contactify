@@ -15,4 +15,9 @@
   flex-grow: 1;
   padding: 10px 20px 20px 20px;
   background-color: rgba(1,1,1,0.1);
+  display: flex;
+}
+
+.Contacts-selected-contact {
+  flex-basis: 20%;
 }

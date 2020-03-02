@@ -1,4 +1,5 @@
 import React from 'react';
+import { ContactsTable } from '..';
 import './Contacts.css';
 
 function Contacts() {
@@ -9,8 +10,8 @@ function Contacts() {
         <button>Add new contact</button>
       </div>
       <div className="Contacts-main">
-        <div>selected contact</div>
-        <div>contacts table</div>
+        <div className="Contacts-selected-contact">selected contact</div>
+        <ContactsTable />
       </div>
     </main>
   );
