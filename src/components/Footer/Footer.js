@@ -1,17 +1,27 @@
 import React from 'react';
 import './Footer.css';
 
-function Footer() {
+function Footer({ mainLinks, otherLinks }) {
   return (
     <div className="Footer">
       <div className="Footer-left">
-        Links (same as header) and copyright
+        {mainLinks.map(link => (
+          <a href={link.href} key={link.label+link.href}>{link.label}</a>
+        ))}
+        <div className="copyright">
+          <span>C 2015 Contactify</span>
+          <a href="#about">About</a>
+          <a href="#privacy">Privacy</a>
+        </div>
       </div>
       <div className="Footer-middle">
-        Sync and support
+        <div className="sync">Sync</div>
+        <div className="support">Support</div>
       </div>
       <div className="Footer-right">
-        Links (same as header dropdown)
+        {otherLinks.map(link => (
+          <a href={link.href} key={link.label+link.href}>{link.label}</a>
+        ))}
       </div>
     </div>
   );

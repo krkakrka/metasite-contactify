@@ -1,7 +1,11 @@
 .Footer {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
+  color: white;
+}
+
+.Footer a:link, .Footer a:visited {
   color: white;
 }
 
@@ -9,16 +13,37 @@
   flex-basis: 40%;
   padding: 10px 20px;
   background-color: rgba(1,1,1,0.3);
+  display: flex;
+  flex-direction: column;
 }
 
 .Footer-middle {
   flex-basis: 40%;
   padding: 10px;
   background-color: rgba(1,1,1,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .Footer-right {
   flex-basis: 20%;
   padding: 10px 20px;
   background-color: rgba(1,1,1,0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.Footer-left > *, .Footer-right > * {
+  margin-bottom: 10px;
+}
+
+.Footer-left .copyright > * {
+  margin-right: 10px;
+}
+
+.Footer-middle .sync, .Footer-middle .support {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
