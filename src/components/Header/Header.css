@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: rgba(1,1,1,0.5);
+  color: white;
 }
 
 .Header-links, .Header-search, .Header-logo {
