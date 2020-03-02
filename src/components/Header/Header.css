@@ -1,1 +1,14 @@
-.Header {}
+.Header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Header-links, .Header-search, .Header-logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Header-menu-button {
+  align-self: start;
+}

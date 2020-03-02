@@ -1,1 +1,3 @@
-.Contacts {}
+.Contacts {
+  flex-grow: 1;
+}
