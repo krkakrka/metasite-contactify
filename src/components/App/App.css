@@ -5,6 +5,7 @@
   justify-content: space-between;
 }
 
+/* todo remove later */
 .App > * {
   border: 1px solid black;
 }
