@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactsTable } from '..';
+import { ContactsTable, ContactDetails } from '..';
 import './Contacts.css';
 
 function Contacts({ contacts }) {
@@ -21,7 +21,7 @@ function Contacts({ contacts }) {
       </div>
       <div className="Contacts-main">
         {selectedContact && (
-          <div className="Contacts-selected-contact">{selectedContact.name}</div>
+          <ContactDetails contact={selectedContact} />
         )}
         <ContactsTable contacts={contacts} onContactSelect={handleContactSelection} />
       </div>
