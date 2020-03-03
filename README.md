@@ -17,3 +17,10 @@ todo:
 - Filter form, enables "enter" to submit and various other stuff.
 - Email as link.
 - handle too long contact info in details.
+- Logo.
+- prettier filter.
+- prettier search input.
+- dropdown.
+- sync
+- support
+- copyright
