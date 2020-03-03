@@ -8,15 +8,15 @@ function Footer({ mainLinks, otherLinks }) {
         {mainLinks.map(link => (
           <a href={link.href} key={link.label+link.href}>{link.label}</a>
         ))}
-        <div className="copyright">
+        <div className="Footer-copyright">
           <span>C 2015 Contactify</span>
           <a href="#about">About</a>
           <a href="#privacy">Privacy</a>
         </div>
       </div>
       <div className="Footer-middle">
-        <div className="sync">Sync</div>
-        <div className="support">Support</div>
+        <div className="Footer-sync">Sync</div>
+        <div className="Footer-support">Support</div>
       </div>
       <div className="Footer-right">
         {otherLinks.map(link => (

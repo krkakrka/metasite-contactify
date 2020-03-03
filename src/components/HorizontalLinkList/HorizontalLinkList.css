@@ -1,0 +1,22 @@
+.HorizontalLinkList {
+  display: flex;
+  align-items: center;
+  background:
+  #00a3bd;
+  border-radius: calc(1em + 20px + 4px);
+  border: 2px solid #00a3bd;
+  font-weight: bold;
+}
+
+.HorizontalLinkList a {
+  padding: 10px 30px;
+}
+
+.HorizontalLinkList a:visited, .HorizontalLinkList a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.HorizontalLinkList a.active {
+  background: #008892;
+}

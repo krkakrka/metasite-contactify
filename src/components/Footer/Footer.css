@@ -25,7 +25,7 @@
   justify-content: space-between;
 }
 
-.Footer-middle .sync, .Footer-middle .support {
+.Footer-middle .Footer-sync, .Footer-middle .Footer-support {
   padding: 20px;
 }
 
@@ -41,11 +41,11 @@
   margin-bottom: 10px;
 }
 
-.Footer-left .copyright > * {
+.Footer-left .Footer-copyright > * {
   margin-right: 10px;
 }
 
-.Footer-middle .sync, .Footer-middle .support {
+.Footer-middle .Footer-sync, .Footer-middle .Footer-support {
   flex-grow: 1;
   display: flex;
   align-items: center;

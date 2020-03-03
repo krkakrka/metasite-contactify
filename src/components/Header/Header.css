@@ -8,28 +8,5 @@
 }
 
 .Header-menu-button {
-  align-self: start;
-}
-
-.Header-links {
-  display: flex;
-  align-items: center;
-  background:
-  #00a3bd;
-  border-radius: calc(1em + 20px + 4px);
-  border: 2px solid #00a3bd;
-  font-weight: bold;
-}
-
-.Header-links a {
-  padding: 10px 30px;
-}
-
-.Header-links a:visited, .Header-links a:link {
-  color: white;
-  text-decoration: none;
-}
-
-.Header-links a.active {
-  background: #008892;
+  align-self: flex-start;
 }
