@@ -1,5 +1,6 @@
 Metasite interview contactify project
 
+First - `yarn install`.
 Run `yarn start` to view locally.
 Run `yarn build` to create a deployable bundle.
 
