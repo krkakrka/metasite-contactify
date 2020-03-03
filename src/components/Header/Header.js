@@ -11,7 +11,7 @@ function Header({ mainLinks, dropdownLinks }) {
              href={link.href}
              key={link.href}
           >
-            {link.label}
+            {link.label.toUpperCase()}
           </a>
         ))}
       </div>
