@@ -14,3 +14,26 @@
 .Header-menu-button {
   align-self: start;
 }
+
+.Header-links {
+  display: flex;
+  align-items: center;
+  background: #4d94ff;
+  height: 2em;
+  border-radius: 2em;
+  border: 2px solid #4d94ff;
+  font-weight: bold;
+}
+
+.Header-links a {
+  padding: 5px 30px;
+}
+
+.Header-links a:visited, .Header-links a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.Header-links a.active {
+  background: #1a75ff;
+}
