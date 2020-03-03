@@ -11,7 +11,7 @@
 
 .Footer-left {
   flex-basis: 40%;
-  padding: 10px 20px;
+  padding: 20px 40px;
   background-color: rgba(1,1,1,0.3);
   display: flex;
   flex-direction: column;
@@ -19,11 +19,14 @@
 
 .Footer-middle {
   flex-basis: 40%;
-  padding: 10px;
   background-color: rgba(1,1,1,0.5);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.Footer-middle .sync, .Footer-middle .support {
+  padding: 20px;
 }
 
 .Footer-right {

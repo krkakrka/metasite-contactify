@@ -4,11 +4,7 @@
   align-items: center;
   background-color: rgba(1,1,1,0.5);
   color: white;
-}
-
-.Header-links, .Header-search, .Header-logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 30px 10px;
 }
 
 .Header-menu-button {
@@ -18,15 +14,15 @@
 .Header-links {
   display: flex;
   align-items: center;
-  background: #00a3bd;
-  height: 2em;
-  border-radius: 2em;
+  background:
+  #00a3bd;
+  border-radius: calc(1em + 20px + 4px);
   border: 2px solid #00a3bd;
   font-weight: bold;
 }
 
 .Header-links a {
-  padding: 5px 30px;
+  padding: 10px 30px;
 }
 
 .Header-links a:visited, .Header-links a:link {
