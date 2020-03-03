@@ -23,7 +23,7 @@ function ContactsTable({ contacts, onContactSelect }) {
               {`Name ${sortOrder}`}
             </th>
             <th className="SurnameColumn cell">Surname</th>
-            <th className="EmailColumn cell">City</th>
+            <th className="CityColumn cell">City</th>
             <th className="EmailColumn cell">Email</th>
             <th className="PhoneColumn cell">Phone</th>
             <th className="ContactActionColumn cell"></th>

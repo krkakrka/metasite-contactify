@@ -12,5 +12,5 @@ html, body, #root {
   flex-direction: column;
   justify-content: space-between;
   background: rgb(52,201,121);
-  background: linear-gradient(90deg, rgba(52,201,121,1) 0%, rgba(42,29,156,1) 80%);
+  background: linear-gradient(90deg, #008579 0%, #23356c 80%);
 }
