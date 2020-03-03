@@ -1,13 +1,28 @@
 import React from 'react';
+import _ from 'lodash';
 import './ContactsTable.css';
 
+function sortContactsAsc(contacts) {
+  return _.sortBy(contacts, (contact) => contact.name);
+}
+
 function ContactsTable({ contacts, onContactSelect }) {
+  const [sortOrder, setSortOrder] = React.useState('asc');
+  const [sortedContacts, setSortedContacts] = React.useState(sortContactsAsc(contacts, sortOrder));
+
+  const resortContactsByName = () => {
+    setSortedContacts([...sortedContacts].reverse());
+    setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+  };
+
   return (
     <div className="ContactsTable">
       <table>
         <thead>
           <tr>
-            <th className="NameColumn cell">Name</th>
+            <th className="NameColumn cell" onClick={resortContactsByName}>
+              {`Name ${sortOrder}`}
+            </th>
             <th className="SurnameColumn cell">Surname</th>
             <th className="EmailColumn cell">City</th>
             <th className="EmailColumn cell">Email</th>
@@ -16,7 +31,7 @@ function ContactsTable({ contacts, onContactSelect }) {
           </tr>
         </thead>
         <tbody>
-          {contacts.map(contact => (
+          {sortedContacts.map(contact => (
             <tr key={contact.id} onClick={() => onContactSelect(contact)}>
               <td className="cell">{contact.name}</td>
               <td className="cell">{contact.surname}</td>
