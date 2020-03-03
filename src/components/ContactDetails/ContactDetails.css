@@ -29,7 +29,6 @@
 }
 
 .ContactDetails .imageContainer {
-  height: 50%;
   display: flex;
   justify-content: center;
 }
@@ -37,6 +36,6 @@
 .ContactDetails .imageContainer img {
   border-radius: 100%;
   border: 5px solid #e9e9e9;
-  height: 100%;
+  height: 200px;
   width: auto;
 }

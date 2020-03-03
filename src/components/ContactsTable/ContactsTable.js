@@ -2,18 +2,17 @@ import React from 'react';
 import _ from 'lodash';
 import './ContactsTable.css';
 
-function sortContactsAsc(contacts) {
-  return _.sortBy(contacts, (contact) => contact.name);
+function sortContactsAsc(contacts, sortOrder) {
+  const sorted = _.sortBy(contacts, (contact) => contact.name);
+  return sortOrder === 'desc' ? sorted.reverse() : sorted;
 }
 
 function ContactsTable({ contacts, onContactSelect }) {
   const [sortOrder, setSortOrder] = React.useState('asc');
-  const [sortedContacts, setSortedContacts] = React.useState(sortContactsAsc(contacts, sortOrder));
-
   const resortContactsByName = () => {
-    setSortedContacts([...sortedContacts].reverse());
     setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
   };
+  const sortedContacts = sortContactsAsc(contacts, sortOrder);
 
   return (
     <div className="ContactsTable">

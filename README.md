@@ -14,3 +14,4 @@ todo:
 - Namespaced selectors - can use namespace when styling, not in classname. Would be cleaner.
 - tidy css?
 - todo add fonts.
+- Filter form, enables "enter" to submit and various other stuff.
